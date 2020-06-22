@@ -6,23 +6,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const env = process.env.NODE_ENV;
 
 module.exports = {
-  entry: './src/index.js',
-
+  entry: './demo/index.js',
   mode: env,
-
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
     publicPath: '/'
   },
-
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 3500,
     hot: true,
   },
-
   module: {
     rules: [
       {
@@ -41,9 +37,8 @@ module.exports = {
       }
     ]
   },
-
   plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new HtmlWebpackPlugin({template: './demo/index.html'}),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",
