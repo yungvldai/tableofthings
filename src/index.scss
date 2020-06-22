@@ -1,0 +1,28 @@
+#testarea {
+  width: 600px;
+  height: 400px;
+  background-color: pink;
+  margin-left: 20px;
+}
+
+#testthing {
+  width: 40px;
+  height: 40px;
+  background-color: coral;
+}
+
+#testthing2 {
+  width: 40px;
+  height: 40px;
+  background-color: mediumaquamarine;
+}
+
+#testthing3 {
+  width: 100px;
+  height: 100px;
+  background-color: mediumvioletred;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
