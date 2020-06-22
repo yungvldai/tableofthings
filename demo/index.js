@@ -9,6 +9,8 @@ let a = new tot.Table({
 })
 
 
+console.log(a.getThings())
+
 
 //a.addThing(c);
 //a.addThing(d);
