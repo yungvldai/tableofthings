@@ -1,6 +1,6 @@
 {
   "name": "tableofthings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Vlad Ivanov",
   "license": "MIT",
   "description": "Small library to drag and drop",
