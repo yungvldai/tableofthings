@@ -1,12 +1,13 @@
 {
   "name": "tableofthings",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Vlad Ivanov",
   "license": "MIT",
   "description": "Small library to drag and drop",
   "scripts": {
     "start-demo": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --colors --config webpack-demo.config.js",
-    "build-lib": "cross-env NODE_ENV=production webpack --config webpack-build.config.js"
+    "build-lib": "cross-env NODE_ENV=production webpack --config webpack-build.config.js",
+    "build-pages": "cross-env NODE_ENV=production webpack --config webpack-github-pages-build.config.js"
   },
   "main": "build/index.js",
   "files": [
